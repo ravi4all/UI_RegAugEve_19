@@ -1,0 +1,38 @@
+body {
+    margin: 0px;
+    background-image: url("https://icc-static-files.s3.amazonaws.com/ICC/photo/2019/01/12/54b86c46-7b7c-4e78-8197-11e065c170c9/GettyImages-992964662.jpg");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+div {
+    height: 620px;
+    background-size: 100% 100%;
+    margin-bottom: 550px;
+    background-attachment: fixed;
+}
+
+#div_1 {
+    background-image: url("https://s4.scoopwhoop.com/anj2/5cbee38ad0aa38676aa9c1ac/6b33126e-4ebe-4b19-a914-a87c5f0a493d.jpg");
+}
+
+#div_2 {
+    background-image: url("https://i.ytimg.com/vi/o_lvEkwuI0M/maxresdefault.jpg");
+}
+
+#div_3 {
+    background-image: url("https://img.etimg.com/thumb/height-450,width-800,msid-68846555,imgsize-458259/ms-dhoni-was-seen-angrily-gesturing-at-the-umpire-.jpg");
+}
+
+#div_4 {
+    background-image: url("https://s3.ap-south-1.amazonaws.com/hansindia-bucket/h-upload/feeds/2019/07/07/193677-dhoni.jpg");
+}
+
+#div_5 {
+    background-image: url("https://images.tribuneindia.com/cms/gall_content/2019/5/2019_5$largeimg02_Thursday_2019_123745585.JPG");
+}
+
+#div_6 {
+    background-image: url("https://images.livemint.com/img/2019/07/01/600x338/2019-06-30T155029Z_726477918_RC19FCA45860_RTRMADP_3_CRICKET-WORLDCUP-ENG-IND_1561960130281_1561960142276.JPG");
+}
