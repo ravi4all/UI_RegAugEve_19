@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        h2:after,
+        h2:before {
+            content: "...";
+        }
+        
+        h2:after {
+            content: "";
+            background: url("../03-Backgrounds/img.png") no-repeat -222px -80px;
+            display: inline-block;
+            vertical-align: middle;
+            width: 60px;
+            height: 60px;
+        }
+        
+        div {
+            height: 100px;
+            width: 200px;
+            border: 2px solid red;
+            border-color: red blue brown green;
+        }
+        
+        div:after {
+            content: "";
+            border: 20px solid;
+            display: inline-block;
+            /* height: 30px;
+            width: 30px; */
+            border-color: red transparent transparent;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Pseudo Elements</h1>
+
+    <h2>This is a heading</h2>
+    <h2>This is a heading</h2>
+    <h2>This is a heading</h2>
+    <h2>This is a heading</h2>
+
+    <div></div>
+
+</body>
+
+</html>
