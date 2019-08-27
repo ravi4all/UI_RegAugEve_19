@@ -1,0 +1,30 @@
+#parent {
+    background-color: lightgray;
+}
+
+#parent:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.col-1 {
+    /* background-color: lightblue; */
+    width: 40%;
+    float: left;
+}
+
+.col-2 {
+    /* background-color: lightsalmon; */
+    float: right;
+    width: 40%;
+}
+
+.blank {
+    clear: both;
+}
+
+.div_1 {
+    background-color: lightcoral;
+    /* clear: both; */
+}
