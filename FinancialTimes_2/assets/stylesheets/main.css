@@ -1,0 +1,236 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+    background-color: #FFF1E5;
+    font-family: 'Arimo', sans-serif;
+}
+
+ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+    font-family: 'Arimo', sans-serif;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* Generic CSS */
+
+#topbar {
+    background-color: #262A33;
+    padding: 10px 0px;
+}
+
+#topbar a {
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#topbar a .value {
+    border: 1px solid;
+    padding: 3px;
+    margin-left: 6px;
+    border-radius: 3px;
+}
+
+#topbar a .red {
+    color: #ff767c;
+    border-color: #ff767c;
+}
+
+#topbar a .green {
+    color: #9cd321;
+    border-color: #9cd321;
+}
+
+#topbar .stockValue {
+    width: 88%;
+}
+
+#topbar .visitMarket {
+    width: 9%;
+}
+
+#topbar ul li {
+    display: inline-block;
+    width: 18%;
+}
+
+#header {}
+
+#header .header_top {
+    padding: 20px 0px;
+    border-bottom: 1px solid #ccc1b7;
+}
+
+#header .header_top a {
+    color: #000;
+}
+
+#header .header_top .icons {
+    width: 12%;
+    padding-top: 20px;
+}
+
+#header .header_top .icons span {
+    display: inline-block;
+    margin-right: 40px;
+    font-size: 20px;
+}
+
+#header .header_top .logo {
+    width: 80%;
+    text-align: center;
+}
+
+#header .header_top h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    margin-bottom: 0px;
+}
+
+#header .header_top .myFt {
+    width: 5%;
+    padding-top: 20px;
+}
+
+#header .header_bottom {
+    border-bottom: 1px solid #ccc1b7;
+}
+
+#header .header_bottom .container {
+    position: relative;
+}
+
+#main-navigation {}
+
+#main-navigation ul li {
+    display: inline-block;
+    font-size: 12px;
+    font-weight: bold;
+    margin: 0px 8px;
+    text-transform: uppercase;
+}
+
+#main-navigation ul li a {
+    color: #000;
+    display: block;
+    padding: 8px 0px;
+}
+
+#main-navigation ul li.active a,
+#main-navigation ul li a:hover {
+    color: #0A5E66;
+    border-bottom: 3px solid #0A5E66;
+}
+
+#main-navigation ul li .dropdown {
+    position: absolute;
+    background-color: #FFF9F5;
+    width: 100%;
+    left: 0px;
+    top: 35px;
+    padding: 10px;
+    display: none;
+}
+
+#main-navigation ul li .dropdown .most-read li {
+    position: relative;
+}
+
+#main-navigation ul li .dropdown .most-read li::before {
+    content: "";
+    background-image: url("https://www.ft.com/__origami/service/image/v2/images/raw/fticon-v1:arrow-right?source=o-icons&tint=%23990F3D,%23990F3D&format=svg");
+    display: block;
+    height: 16px;
+    width: 20px;
+    position: absolute;
+    left: -20px;
+    top: 7px;
+    background-size: 100% 100%;
+}
+
+#main-navigation ul li .dropdown .sections li {
+    width: 45%;
+}
+
+#main-navigation .dropdown .sections {
+    width: 30%;
+    border-right: 1px solid #ccc1b7;
+}
+
+#main-navigation .dropdown .most-read {
+    width: 60%;
+    margin-left: 40px;
+}
+
+#main-navigation .dropdown .most-read li {
+    display: block;
+}
+
+#main-navigation ul li .dropdown a:hover {
+    border: none;
+}
+
+#main-navigation .dropdown li:hover a {
+    text-decoration: underline;
+}
+
+#main-navigation ul li:hover .dropdown {
+    display: block;
+}
+
+#main {}
+
+#sidebar {}
+
+#footer {}
+
+
+/* Specific CSS */
+
+
+/* Page 1 */
+
+
+/* Page 2 */
