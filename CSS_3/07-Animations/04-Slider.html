@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #slider {
+            height: 500px;
+            border: 1px solid red;
+            background-size: 100% 100%;
+            animation: slider 30s infinite;
+        }
+        
+        @keyframes slider {
+            0%,
+            18% {
+                background-image: url("../../images/WebImages/Terminator002.jpg");
+            }
+            20%,
+            38% {
+                background-image: url("../../images/WebImages/avengers-thor.jpg");
+            }
+            40%,
+            58% {
+                background-image: url("../../images/WebImages/batman_arkham_knight-1366x768.jpg");
+            }
+            60%,
+            78% {
+                background-image: url("../../images/WebImages/chris_hemsworth__angry_thor.jpg");
+            }
+            80%,
+            100% {
+                background-image: url("../../images/WebImages/thor-chris-hemsworth.jpg");
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Slideshow</h1>
+
+    <div id="slider">
+
+    </div>
+
+</body>
+
+</html>
