@@ -1,0 +1,42 @@
+body {
+    margin: 0px;
+    overflow: hidden;
+}
+
+#background {
+    height: 600px;
+    background-image: url("https://wallpapersite.com/images/wallpapers/earth-3840x2160-stars-hd-5k-3468.jpg");
+    background-size: 100% 100%;
+    animation: anim_1 30s infinite linear;
+}
+
+@keyframes anim_1 {
+    0% {
+        transform: scale(4, 4);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+#ironman {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+    bottom: -100px;
+    left: 30%;
+    background-image: url("../../images/NewImages/ironman_1.png");
+    background-size: 100% 100%;
+    animation: anim_2 10s infinite linear;
+    animation-delay: 20s;
+    transform: scale(0, 0);
+}
+
+@keyframes anim_2 {
+    0% {
+        transform: scale(0, 0);
+    }
+    100% {
+        transform: scale(2, 2) translate(300px, -300px);
+    }
+}
