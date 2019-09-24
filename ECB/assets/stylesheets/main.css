@@ -1,0 +1,159 @@
+/* Global Settings */
+
+body {
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 0px;
+}
+
+
+/* Helper Classes */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear::after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+.row {
+    display: flex;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+.sprite {
+    background-image: url("https://www.ecb.co.uk/resources/ver/i/sprites/global-sprite.png");
+    background-repeat: no-repeat;
+}
+
+
+/* Generic CSS */
+
+#header {
+    position: fixed;
+    height: 111%;
+    background-color: #005699;
+}
+
+#header .header-wrapper {
+    overflow-y: scroll;
+    height: 90%;
+    padding-bottom: 11px;
+}
+
+#header .logo {
+    background-color: #002F52;
+}
+
+#header .logo a {
+    display: block;
+    padding: 15px 40px;
+    text-align: center;
+    position: relative;
+}
+
+#header .logo a::before {
+    content: "";
+    position: absolute;
+    background-color: #29a9e4;
+    width: 5%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+}
+
+#header .logo .logo-sprite {
+    display: block;
+    height: 80px;
+    width: 34px;
+    background-position: -602px -199px;
+}
+
+#main-navigation {
+    padding-top: 20px;
+    margin-bottom: 15px;
+}
+
+#main-navigation ul li a {
+    color: #fff;
+    opacity: 0.6;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 11px;
+    padding: 13px 14px;
+    display: block;
+}
+
+#main-navigation ul li a:hover {
+    background-color: #002F52;
+    opacity: 1;
+}
+
+#main-navigation ul li a i {
+    margin-right: 6px;
+    font-size: 13px;
+}
+
+#main {}
+
+#sidebar {}
+
+#footer {}
+
+.sociable ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.sociable ul li a {
+    color: #fff;
+    opacity: 0.6;
+}
+
+
+/* Specific CSS */
+
+
+/* Page 1 */
+
+
+/* Page 2 */
