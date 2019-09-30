@@ -1,0 +1,37 @@
+Javascript
+- Client + Server Side Dynamic Scripting Language
+
+Netscape
+Nexus  -  Static
+Mosaic -  Dynamic
+
+Brendon Eich - 10 days
+Build JS using - Self + Scheme
+Inspired by - Java, Python
+
+Mocha - first name
+market - livescript
+
+javascript
+
+scripting - interpreted type of language
+
+ECMAScript
+
+Mozilla
+
+- Interpreted Language
+- Multi-Paradigm(Type) language =  OOPS + Procedural + Functional
+- Event-Driven Language
+- Loosely Typed language
+- Dynamically Typed
+- Prototype Based
+- High Level language
+
+
+- DOM
+- BOM
+- AJAX
+- Data Structures
+
+
