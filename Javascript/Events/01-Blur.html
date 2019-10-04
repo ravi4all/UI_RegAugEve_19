@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Blur Event</h1>
+
+    <input type="text" onblur="validate(this)">
+    <span id="span"></span>
+
+    <script>
+        function validate(obj) {
+            // alert("Blur Called...");
+            var username = obj.value;
+            var span = document.querySelector("#span");
+            if (username) {
+                span.innerHTML = "";
+            } else {
+                span.innerHTML = "Please fill this";
+            }
+        }
+    </script>
+</body>
+
+</html>
