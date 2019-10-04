@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .images {
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .images img:nth-child(odd) {
+            transform: translate(-150%, -120%);
+        }
+        
+        .images img:nth-child(even) {
+            transform: translate(200%, -120%);
+        }
+        
+        img {
+            transition: 2s;
+        }
+        
+        .images img.animate {
+            transform: translate(0px, 0px);
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>Scroll Event</h1>
+
+    <div class="images">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+        <img src="../../images/dhoni.jpg" alt="">
+    </div>
+
+    <script>
+        window.addEventListener("scroll", function() {
+            var scroll = window.scrollY;
+            // console.log(scroll);
+            var imgs = document.querySelectorAll("img");
+            if (scroll > 100) {
+                for (var i = 0; i < imgs.length; i++) {
+                    imgs[i].className = "animate";
+                }
+            } else {
+                for (var i = 0; i < imgs.length; i++) {
+                    imgs[i].className = "";
+                }
+            }
+        })
+    </script>
+
+</body>
+
+</html>

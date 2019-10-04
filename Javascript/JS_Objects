@@ -1,0 +1,39 @@
+var obj = {"id":101,"name":"Ram","age":34,"sal":45000}
+undefined
+obj
+{id: 101, name: "Ram", age: 34, sal: 45000}age: 34id: 101name: "Ram"sal: 45000__proto__: Object
+obj.name
+"Ram"
+obj.address = "delhi";
+"delhi"
+obj
+{id: 101, name: "Ram", age: 34, sal: 45000, address: "delhi"}
+obj.1
+VM248:1 Uncaught SyntaxError: Unexpected number
+var obj = {"id":101,"name":"Ram","age":34,"sal":45000,"fav color":"red"}
+undefined
+obj["fav color"]
+"red"
+function Emp(id,name,age) {
+	this.id = id;
+	this.name = name;
+	this.age = age;
+}
+undefined
+var obj_1 = new Emp(101,'Ram',27)
+undefined
+obj_1
+Emp {id: 101, name: "Ram", age: 27}
+obj
+{id: 101, name: "Ram", age: 34, sal: 45000, fav color: "red"}
+obj.details = function() {
+	console.log(this.id,this.name,this.age,this.sal);
+}
+ƒ () {
+	console.log(this.id,this.name,this.age,this.sal);
+}
+obj
+{id: 101, name: "Ram", age: 34, sal: 45000, fav color: "red", …}age: 34details: ƒ ()fav color: "red"id: 101name: "Ram"sal: 45000__proto__: Object
+obj.details()
+VM737:2 101 "Ram" 34 45000
+undefined
