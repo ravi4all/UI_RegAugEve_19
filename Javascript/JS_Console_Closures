@@ -1,0 +1,233 @@
+var song = {
+	"s_id":101,
+	"s_name":"Bang Bang",
+	"s_url":"url-to-song"
+}
+undefined
+song
+{s_id: 101, s_name: "Bang Bang", s_url: "url-to-song"}
+song.s_url
+"url-to-song"
+function Song(id,name,url,poster) {
+	this.id = id;
+	this.name = namel
+	this.url = url;
+	this.poster = poster;
+}
+undefined
+function Song(id,name,url,poster) {
+	this.id = id;
+	this.name = name;
+	this.url = url;
+	this.poster = poster;
+}
+undefined
+var s1 = new Song(101,"Bang bang","url_to_song","img");
+undefined
+s1
+Song {id: 101, name: "Bang bang", url: "url_to_song", poster: "img"}
+var playList = []
+undefined
+playList.push(s1);
+1
+playList
+[Song]0: Song {id: 101, name: "Bang bang", url: "url_to_song", poster: "img"}length: 1__proto__: Array(0)
+var song = {
+	"s_id":101,
+	"s_name":"Bang Bang",
+	"s_url":"url-to-song",
+	"showSong" : function() {
+		console.log("Song details",s_id,s_name,s_url);
+	}
+}
+undefined
+song.showSong()
+VM760:6 Uncaught ReferenceError: s_id is not defined
+    at Object.showSong (<anonymous>:6:30)
+    at <anonymous>:1:6
+showSong @ VM760:6
+(anonymous) @ VM801:1
+var song = {
+	"s_id":101,
+	"s_name":"Bang Bang",
+	"s_url":"url-to-song",
+	"showSong" : function() {
+		console.log("Song details",this.s_id,this.s_name,this.s_url);
+	}
+}
+undefined
+song.showSong()
+VM875:6 Song details 101 Bang Bang url-to-song
+undefined
+var song = {
+	"s_id":101,
+	"s_name":"Bang Bang",
+	"s_url":"url-to-song",
+	"showSong" : function() {
+		function songDetail() {
+			console.log("Song details",this.s_id,this.s_name,this.s_url);
+		}
+	}
+}
+undefined
+song.showSong()
+undefined
+var song = {
+	"s_id":101,
+	"s_name":"Bang Bang",
+	"s_url":"url-to-song",
+	"showSong" : function() {
+		function songDetail() {
+			console.log("Song details",this.s_id,this.s_name,this.s_url);
+		}
+		songDetail();
+	}
+}
+undefined
+song.showSong()
+VM1108:7 Song details undefined undefined undefined
+undefined
+var song = {
+	"s_id":101,
+	"s_name":"Bang Bang",
+	"s_url":"url-to-song",
+	"showSong" : function() {
+		var that = this;
+		function songDetail() {
+			console.log("Song details",that.s_id,that.s_name,that.s_url);
+		}
+		songDetail();
+	}
+}
+undefined
+song.showSong()
+VM1200:8 Song details 101 Bang Bang url-to-song
+undefined
+function counter() {
+	var x = 0;
+	return x += 1;
+}
+undefined
+counter()
+1
+counter()
+1
+function counter() {
+	var x = 0;
+	function incCounter(){
+		return x += 1;
+	}
+}
+undefined
+counter()
+undefined
+incCounter()
+VM1432:1 Uncaught ReferenceError: incCounter is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM1432:1
+function counter() {
+	var x = 0;
+	function incCounter(){
+		return x += 1;
+	}
+	incCounter();
+}
+undefined
+counter()
+undefined
+function counter() {
+	var x = 0;
+	function incCounter(){
+		return x += 1;
+	}
+	return incCounter();
+}
+undefined
+counter()
+1
+counter()
+1
+function counter() {
+	var x = 0;
+	function incCounter(){
+		return x += 1;
+	}
+	return incCounter;
+}
+undefined
+counter()
+ƒ incCounter(){
+		return x += 1;
+	}
+counter
+ƒ counter() {
+	var x = 0;
+	function incCounter(){
+		return x += 1;
+	}
+	return incCounter;
+}
+counter()
+ƒ incCounter(){
+		return x += 1;
+	}
+inc = counter();
+ƒ incCounter(){
+		return x += 1;
+	}
+inc()
+1
+inc()
+2
+inc()
+3
+inc()
+4
+function counter() {
+	var x = 0;
+	return function(){
+		return x += 1;
+	}
+}
+undefined
+counter()
+ƒ (){
+		return x += 1;
+	}
+inc = counter();
+ƒ (){
+		return x += 1;
+	}
+inc()
+1
+inc()
+2
+inc()
+3
+function(){
+	var x = 10;
+	var y = 12;
+	var c = x + y;
+	console.log(x+y);
+}
+VM1842:1 Uncaught SyntaxError: Function statements require a function name
+(function(){
+	var x = 10;
+	var y = 12;
+	var c = x + y;
+	console.log(x+y);
+})
+ƒ (){
+	var x = 10;
+	var y = 12;
+	var c = x + y;
+	console.log(x+y);
+}
+(function(){
+	var x = 10;
+	var y = 12;
+	var c = x + y;
+	console.log(x+y);
+})()
+VM1864:5 22
+undefined
