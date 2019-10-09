@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>Need of AJAX</h1>
+
+    <button onclick="show()">Click Me</button>
+
+    <script>
+        function show() {
+            one();
+            two();
+            three();
+            four();
+            five();
+        }
+
+        function one() {
+            console.log("Function One Executed");
+        }
+
+        function two() {
+            console.log("Function Two Executed");
+        }
+
+        function three() {
+
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                console.log(this.readyState, this.status);
+                if (this.status == 200 && this.readyState == 4) {
+                    for (var i = 0; i < 100000; i++) {
+                        for (var j = 0; j < 100000; j++) {
+                            k = i + j;
+                        }
+                    }
+                    console.log("Function Three Executed");
+                }
+            }
+
+            xhttp.open('get', '');
+            xhttp.send();
+        }
+
+        function four() {
+            console.log("Function Four Executed");
+        }
+
+        function five() {
+            console.log("Function Five Executed");
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <h1>AJAX Call</h1>
+
+    <button onclick="load()">Load Images</button>
+
+    <ul id="images">
+
+    </ul>
+
+
+    <script>
+        function load() {
+            var images = document.querySelector("#images");
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    data = this.responseText;
+                    data = JSON.parse(data);
+                    data = data.data;
+                    data.forEach(function(obj) {
+                        var li = document.createElement("li");
+                        var img = document.createElement("img");
+                        imgUrl = obj.images.downsized_medium.url;
+                        img.src = imgUrl;
+                        li.appendChild(img);
+                        images.appendChild(li);
+                    })
+                }
+            }
+            xhttp.open("get", "http://api.giphy.com/v1/gifs/search?q=virat+kohli&api_key=bc56161131654faeb550630b83e0c977&limit=5")
+            xhttp.send();
+        }
+    </script>
+</body>
+
+</html>
